@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health & Wellness Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="chat-container">
+        <div class="chat-header">
+            🩺 Health & Wellness Guide
+        </div>
+
+        <div class="chat-body" id="chatBody">
+            <div class="bot-msg">Hello! Ask me about hydration, exercise, sleep, or nutrition 😊</div>
+        </div>
+
+        <div class="chat-footer">
+            <input type="text" id="userInput" placeholder="Type your message..." class="form-control">
+            <button class="btn btn-success" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
