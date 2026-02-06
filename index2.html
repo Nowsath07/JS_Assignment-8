@@ -3,24 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Health & Wellness Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container d-flex justify-content-center align-items-center vh-100">
-    <div class="chat-container">
-        <div class="chat-header">
-            🩺 Health & Wellness Guide
-        </div>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
 
-        <div class="chat-body" id="chatBody">
-            <div class="bot-msg">Hello! Ask me about hydration, exercise, sleep, or nutrition 😊</div>
-        </div>
+            <div class="card shadow">
+                <div class="card-header text-center bg-success text-white">
+                    🩺 Health & Wellness Guide
+                </div>
 
-        <div class="chat-footer">
-            <input type="text" id="userInput" placeholder="Type your message..." class="form-control">
-            <button class="btn btn-success" onclick="sendMessage()">Send</button>
+                <div class="card-body chat-body" id="chatBody">
+                    <div class="bot-msg">
+                        Hello! 👋 Ask me about hydration, exercise, sleep, or nutrition.
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <div class="input-group">
+                        <input type="text" id="userInput" class="form-control" placeholder="Type your message...">
+                        <button class="btn btn-success" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>
